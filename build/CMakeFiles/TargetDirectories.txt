@@ -1,0 +1,3 @@
+/home/viniciuscgp/Desktop/NRGameEngine/build/CMakeFiles/nrge.dir
+/home/viniciuscgp/Desktop/NRGameEngine/build/CMakeFiles/edit_cache.dir
+/home/viniciuscgp/Desktop/NRGameEngine/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLAudio.cpp.o"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLAudio.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLGraphics.cpp.o"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLGraphics.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLInput.cpp.o"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLInput.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLSurface.cpp.o"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLSurface.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLTimer.cpp.o"
+  "CMakeFiles/nrge.dir/src/adapters/sdl/SDLTimer.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/engine/Engine.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/engine/Engine.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/engine/GameLoader.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/engine/GameLoader.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/engine/LuaApi.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/engine/LuaApi.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/engine/ResourceManager.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/engine/ResourceManager.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/engine/ScriptManager.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/engine/ScriptManager.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/model/Collision.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/model/Collision.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/model/Entity.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/model/Entity.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/model/Game.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/model/Game.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/model/Instance.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/model/Instance.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/model/Scene.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/model/Scene.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/core/util/Logger.cpp.o"
+  "CMakeFiles/nrge.dir/src/core/util/Logger.cpp.o.d"
+  "CMakeFiles/nrge.dir/src/main.cpp.o"
+  "CMakeFiles/nrge.dir/src/main.cpp.o.d"
+  "nrge"
+  "nrge.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/nrge.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

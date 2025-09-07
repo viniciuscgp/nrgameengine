@@ -1,0 +1,86 @@
+{
+  "game": {
+    "name": "Example",
+    "description": "Lua Test - Quadrado",
+    "version": "0.1",
+    "width": 800,
+    "height": 600,
+    "type": "demo",
+
+    "images": [],
+
+    "animations": [],
+
+    "sounds": [],
+
+    "scripts": [
+      {
+        "name": "init_square",
+        "code": "self.x = 400; self.y = 300;"
+      },
+      {
+        "name": "on_click_move",
+        "code": "if mouse_button_pressed() then self.x = self.x + 5 end"
+      },
+      {
+        "name": "on_key_press",
+        "code": "if key_held(VK_RIGHT) then self.force_x = 1 end \nif key_held(VK_LEFT) then self.force_x = -1 end self.friction = 0.01\nif key_held(VK_UP) then self.force_y = -1 end \nif key_held(VK_DOWN) then self.force_y = 1 end"
+      }
+    ],
+
+    "entities": [
+      {
+        "name": "square",
+        "on_create": "init_square",
+        "on_destroy": "",
+        "on_step": "on_click_move",
+        "on_collision": "",
+        "on_keypress": "",
+        "on_joystick": "",
+        "animation_name": "",
+        "alarms": []
+      },
+      {
+        "name": "square2",
+        "on_create": "",
+        "on_destroy": "",
+        "on_step": "on_key_press",
+        "on_collision": "",
+        "on_keypress": "",
+        "on_joystick": "",
+        "animation_name": "",
+        "alarms": []
+      }
+
+    ],
+
+    "scenes": [
+      {
+        "name": "main",
+        "instances": [
+          {
+            "entity_name": "square",
+            "depth": 0,
+            "x": 0,
+            "y": 0,
+            "force_x": 0,
+            "force_y": 0,
+            "friction": 0,
+            "image_index": 0
+          },
+          {
+            "entity_name": "square2",
+            "depth": 0,
+            "x": 0,
+            "y": 0,
+            "force_x": 0,
+            "force_y": 0,
+            "friction": 0,
+            "image_index": 0
+          }
+
+        ]
+      }
+    ]
+  }
+}
