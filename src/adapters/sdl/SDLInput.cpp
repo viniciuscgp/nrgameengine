@@ -113,19 +113,22 @@ void SDLInput::endFrame() {
 }
 
 bool SDLInput::isKeyPressed(KeyCode key) const {
-    auto it = keyStates.find(key);
-    return (it != keyStates.end() && it->second == KeyState::PRESSED);
+    return isOnState(key, KeyState::PRESSED);
 }
 
 bool SDLInput::isKeyReleased(KeyCode key) const {
-    auto it = keyStates.find(key);
-    return (it != keyStates.end() && it->second == KeyState::RELEASED);
+    return isOnState(key, KeyState::RELEASED);
 }
 
 bool SDLInput::isKeyHeld(KeyCode key) const {
-    auto it = keyStates.find(key);
-    return (it != keyStates.end() && it->second == KeyState::HELD);
+    return isOnState(key, KeyState::HELD);
 }
+
+bool SDLInput::isOnState(KeyCode key, KeyState state) const {
+    auto it = keyStates.find(key);
+    return (it != keyStates.end() && it->second == state);
+}
+
 
 bool SDLInput::isMouseButtonPressed(int button) const {
     auto it = mouseButtons.find(button);

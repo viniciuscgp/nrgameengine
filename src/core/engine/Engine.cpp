@@ -20,6 +20,7 @@ Engine::~Engine() {}
 
 bool Engine::init(int width, int height, const std::string &title,
                   const std::string &path) {
+                    
     // carrega o JSON (padrão ./game.json ou o fornecido)
     game = GameLoader::load(path);
     if (!game) {
@@ -39,10 +40,10 @@ bool Engine::init(int width, int height, const std::string &title,
     }
 
     // aplica overrides 
-    int finalWidth  = (width  > 0) ? width  : game->width;
-    int finalHeight = (height > 0) ? height : game->height;
+    int finalWidth  = (game->width  > 0) ? game->width:width;
+    int finalHeight = (game->height > 0) ? game->height:height;
 
-    std::string finalTitle = !title.empty() ? title : game->description;
+    std::string finalTitle = !game->description.empty() ? game->description:title;
 
     // inicializa gráficos
     if (!graphics->init(finalWidth, finalHeight, finalTitle)) {

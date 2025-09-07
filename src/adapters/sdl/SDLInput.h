@@ -25,6 +25,7 @@ public:
     bool isKeyPressed(KeyCode key) const override;
     bool isKeyReleased(KeyCode key) const override;
     bool isKeyHeld(KeyCode key) const override;
+    bool isOnState(KeyCode key, KeyState state) const;
 
     int getMouseX() const override { return mouseX; }
     int getMouseY() const override { return mouseY; }

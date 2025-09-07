@@ -6,10 +6,10 @@
 #include <string>
 
 int main(int argc, char* argv[]) {
-    std::string gamePath = "./game.json";   // padrão
+    std::string gamePath = "./game.json";
 
     if (argc > 1) {
-        gamePath = argv[1];  // se passou argumento, sobrescreve
+        gamePath = argv[1];
     }
 
     Engine engine(
